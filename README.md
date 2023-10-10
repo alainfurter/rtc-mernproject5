@@ -19,7 +19,7 @@ const carSchema = new mongoose.Schema({
   brand: String,
   model: String,
   color: String,
-  year: String,
+  year: String
 });
 
 
@@ -49,7 +49,7 @@ Submit the following payload in the body of the POST request as an example:
     "brand" : "Band Name",
     "model" : "Model Name",
     "color" : "Color of the car",
-    "year"  : "Year or production",
+    "year"  : "Year or production"
 }
 
 4. Update a particular car identified by its id:
@@ -63,7 +63,7 @@ Submit updated keys and values for a particular car identifed by its id. Possibl
     "brand" : "Band Name",
     "model" : "Model Name",
     "color" : "Color of the car",
-    "year"  : "Year or production",
+    "year"  : "Year or production"
 }
 
 
