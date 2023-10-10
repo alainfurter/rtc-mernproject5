@@ -9,7 +9,7 @@ Mongo DB URL:
 
 mongodb://localhost:27017/cars
 
-(see or updated .env)
+(see src/config/db.js)
 
 
 Car Schema (MongoDB):
