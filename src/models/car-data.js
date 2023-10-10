@@ -23,7 +23,7 @@ let cars = [
 
 const clearAndInsertData = async () => {
   await Car.collection.drop();
-  await Car.insertMany(students);
+  await Car.insertMany(cars);
 };
 
 module.exports = { clearAndInsertData };

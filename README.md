@@ -29,19 +29,19 @@ API Endpoints:
 1. Get all cars in the MongoDB collection:
 -----------------------------------------
 
-GET http://localhost:3001/cars
+GET http://localhost:4001/cars
 
 
 2. Get a particular car by its id:
 -----------------------------------------
 
-GET http://localhost:3001/car/:id
+GET http://localhost:4001/car/:id
 
 
 3. Create a new car
 -----------------------------------------
 
-POST http://localhost:3001/cars
+POST http://localhost:4001/cars
 
 Submit the following payload in the body of the POST request as an example:
 
@@ -55,7 +55,7 @@ Submit the following payload in the body of the POST request as an example:
 4. Update a particular car identified by its id:
 -----------------------------------------
 
-PUT http://localhost:3001/car/:id
+PUT http://localhost:4001/car/:id
 
 Submit updated keys and values for a particular car identifed by its id. Possible keys:
 
@@ -70,4 +70,4 @@ Submit updated keys and values for a particular car identifed by its id. Possibl
 5. Delete a particular car identified by its id:
 -----------------------------------------
 
-DELETE http://localhost:3001/car/:id
+DELETE http://localhost:4001/car/:id

@@ -4,7 +4,7 @@ const {
   createCarDB,
   updateCarDB,
   deleteCarDB,
-} = require("../repositories/carFunctions");
+} = require("../repositories/carsFunctions");
 
 // GET http://localhost:3001/cars
 const getAllCars = async (req, res) => {
@@ -22,7 +22,7 @@ const getCarById = async (req, res) => {
 // POST http://localhost:3001/cars
 const createCar = async (req, res) => {
   const newCar = await createCarDB({
-    brand: req.model.brand,
+    brand: req.body.brand,
     model: req.body.model,
     color: req.body.color,
     year: req.body.year,
@@ -35,8 +35,8 @@ const createCar = async (req, res) => {
 // PUT http://localhost:3001/car/:id
 const updateCar = async (req, res) => {
   const { id } = req.params;
-  const { brand, model, color, year } = req.body;
-  const updatedCar = await updateCarDB(id, { brand, model, color, year });
+  //const { brand, model, color, year } = req.body;
+  const updatedCar = await updateCarDB(id, req.body);
   res.status(200).json({ data: updatedCar });
 };
 
